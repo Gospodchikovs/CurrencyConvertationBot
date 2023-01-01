@@ -5,7 +5,7 @@ from config import TOKEN_BOT
 bot = telebot.TeleBot(TOKEN_BOT)  # Бот доступен по ссылке https://t.me/gospodchikovbot
 requestor = PriceRequestor()
 
-пше
+
 @bot.message_handler(commands=['start', 'help'])
 def start_help(message):
     bot.reply_to(message, 'Формат строки для конвертации валюты:\n' +
