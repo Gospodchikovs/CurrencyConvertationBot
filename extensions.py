@@ -15,10 +15,7 @@ class APIException(Exception):
 class PriceRequestor:
     @staticmethod
     def get_values() -> list:
-        result = []
-        for currency in CURRENCY_LIST.keys():
-            result.append(currency)
-        return result
+        return CURRENCY_LIST.keys()
 
     @staticmethod
     def get_price(base: str, quote: str, amount: str) -> float:
